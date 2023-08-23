@@ -13,26 +13,28 @@ public class EJERCICIO1  {
         System.out.print("Ingrese el divisor (número por el cual dividir): ");
 
         int divisor = sc.nextInt();
+        if (divisor>0) {
 
-        double resultado = (double) dividendo / divisor;
+            int resultado = dividendo / divisor;
 
-        boolean exactDivision = dividendo % divisor == 0;
+            boolean exactDivision = dividendo % divisor == 0;
+            int residuo = dividendo % divisor;
 
-        System.out.println("Resultado de la división: " + resultado);
+            System.out.println("cociente de la división: " + resultado);
+            System.out.println("el residuo es " + residuo);
+            if (exactDivision) {
 
-        if (exactDivision) {
+                System.out.println("La división es exacta.");
 
-            System.out.println("La división es exacta.");
+            } else {
 
-        } else {
+                System.out.println("La división no es exacta.");
 
-            System.out.println("La división no es exacta.");
-
+            }
         }
 
+        else{
+            System.out.println("operacion invalida" );}
 
 
-
-    }
-
-}
+        
